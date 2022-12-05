@@ -21,6 +21,7 @@
         <title>GinnojiManga</title>
     </head>
 <body>
+
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="MainPage.html">GinnojiManga</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -54,52 +55,30 @@
                     <a class="nav-link" href="#">FAQ</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Поиск по названию" aria-label="Search">
+            <!-- <form name="publish" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchText" name="message" type="search" placeholder="Поиск по названию" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-            </form>
-        </div>
+            </form> -->
+    </div>
     </nav>   
     <div class="main-page">
         <div class="information-list">
-            <div class="base">
-                <div class="img-section">
-                    <img class="img-more" src="" alt="">
-                </div>
-                <div class="title-section">
-                    <div class="text-title">
-                        <h2 id="cardName"></h2>
-                    </div>
-                    <div class="text-information">
-                        <h6>Тип Манги</h6><br>
-                        <p id="MType"></p>
-                        <h6>Год выпуска</h6><br>
-                        <p id="MRelizeAge"></p>
-                        <h6>Автор</h6><br>
-                        <p id="MAuthor"></p>
-                        <h6>Издательство</h6><br>
-                        <p id="MPublisher"></p>
-                        <h6>Жанры</h6><br>
-                        <p id="MGenre"></p>
-                    </div>
-                </div>
-                <!-- <div class="info-section"></div> -->
-                <div class="description-section">
-                    <div class="text-description">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sed ducimus blanditiis delectus explicabo pariatur esse corrupti dolorum rerum quibusdam. Qui ipsam voluptatum totam repellendus optio iste eum impedit magnam.
-                        </p>
-                        <div class="controll-button">
-                            <form action="AddPage.html" id="updateForm">
-                                <button id="btnUpdate">Редактировать</button>
-                            </form>
-                            <button id="btnDelete">Удалить</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="base1">
+            
+            </div>
+            <div class="controll-button">
+                <form action="AddPage.html" id="updateForm">
+                    <button id="btnUpdate">Редактировать</button>
+                </form>
+                <form class="btnDel" name="btndelete"> 
+                    <button id="btnDelete">Удалить</button>
+                </form>
             </div>
         </div>
     </div> 
-    <script src="js/main.js"></script>
+    <script src="js/MangaInfo.js"></script>
+    <script src="js/delete.js"></script>
+
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -55,24 +55,34 @@
                     <a class="nav-link" href="#">FAQ</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Поиск по названию" aria-label="Search">
+            <!-- <form name="publish" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchText" name="message" type="search" placeholder="Поиск по названию" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-            </form>
-        </div>
+            </form> -->
+    </div>
     </nav>    
     <div class="main-page">
         <div class="information-list">
             <div class="add-base">
                 <div class="input-section">
-                    <label for="type">Тип</label><br>
-                    <input class="inputs" id="type" type="text" size="40%" autocomplete="off"><br>
-                    <p></p>
+                    <label for="genre">Жанр</label><br>
+                    <!-- <input class="inputs" id="genre" type="text" size="40%" autocomplete="off"><br> -->
+                    <select id="genre" class="select-item">
+                        <option value="1">Комедия</option>
+                        <option value="2">Экшен</option>
+                        <option value="3">Фантастика</option>
+                        <option value="4">Приключения</option>
+                        <option value="5">Драма</option>
+                        <option value="6">Романтика</option>
+                        <option value="7">Спорт</option>
+                        <option value="8">Триллер</option>
+                    </select>
+                                        <p></p>
                     <label for="title">Название манги</label><br>
                     <input class="inputs" id="title" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
-                    <label for="relizeAge">Год релиза</label><br>
-                    <input class="inputs" id="relizeAge" type="text" size="40%" autocomplete="off"><br>
+                    <label for="release_age">Год релиза</label><br>
+                    <input class="inputs" id="release_age" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
                     <label for="author">Автор</label><br>
                     <input class="inputs" id="author" type="text" size="40%" autocomplete="off"><br>
@@ -80,22 +90,30 @@
                     <label for="publisher">Издательство</label><br>
                     <input class="inputs" id="publisher" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
-                    <label for="genre">Жанр</label><br>
-                    <input class="inputs" id="genre" type="text" size="40%" autocomplete="off"><br>
-                    <p></p>
+                    <label for="type">Тип</label><br>
+                    <!-- <input class="inputs" id="type" type="text" size="40%" autocomplete="off"><br> -->
+                    <select id="type" class="select-item">
+                        <option value="1">Манга</option>
+                        <option value="2">Манхва</option>
+                        <option value="3">Сингл</option>
+                    </select>
+                                        <p></p>
                     <label for="description">Описание</label><br>
                     <input class="inputs" id="description" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
                     <label for="imgLink">Ссылка на картинку</label><br>
                     <input class="inputs" id="imgLink" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
-                    <button id="btnAdd">Добавить</button>
-                    <button id="btnSave">Сохранить</button>
+                    <form name="addd">
+                    <button class="addbtn" id="btnAdd">Добавить</button>
+                    <form name="updt">
+                        <button id="btnSave" type="submit">Сохранить</button>
+                    </form>
+                </form>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
-
+    <script src="js/create.js"></script>
 </body>
 </html>

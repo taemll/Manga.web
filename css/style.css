@@ -9,9 +9,9 @@ div{
 body {
 	background-color: #141414 !important;
 }
-    nav {
+nav {
     background-color: #3b5d5f !important;
-    position: fixed !important;
+    position:  fixed!important;
     top: 0 ;
     width: 100%;
 }
@@ -76,6 +76,8 @@ button{
     margin: 1%;
     border: 5px #3b5d5f;
     position: relative;
+    width: 127px;
+    height: 200px;
 }
 .text{
     display: flex;
@@ -86,13 +88,17 @@ button{
     margin: 1%;
 
 }
+h6{
+    color: gray;
+}
 label,p,h5{
     font-family: "Segoe UI";   
     color: #ebf1f1;
 }
 img{
-    max-height:200px ;
+    /* max-height:200px ; */
     width:100% ;
+    border-radius: 3px;
 
 }
 .divider{
@@ -108,7 +114,13 @@ img{
 button:hover{
     background-color: #bababa !important;
 }
-
+.select-item{
+    background-color: #1c1c1e;
+    color: #ebf1f1;
+    width: 112%;
+    padding: 5px;
+    border-color: rgb(59, 59, 59);
+}
 .media-card p {
     position: absolute;
     left: 0;

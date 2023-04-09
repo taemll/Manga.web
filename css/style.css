@@ -96,7 +96,7 @@ label,p,h5{
     color: #ebf1f1;
 }
 img{
-    /* max-height:200px ; */
+    /* max-height:200px ;  */
     max-width:100% ;
     border-radius: 3px;
     height: 100%;
@@ -129,7 +129,7 @@ button:hover{
     width: 100%;
     margin-bottom: 0 !important;
     font-size: 13px;
-    line-height: 1.3;
+    line-height: 1;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -219,4 +219,14 @@ button:hover{
 }
 .btnDel{
     margin-left: auto;
+}
+.Chapters-list{
+    height: 100%;
+    max-width: 80%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #1c1c1e;
+    border-radius: 5px;
+    padding: 10px;
 }

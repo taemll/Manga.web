@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>GinnojiManga</title>
 </head>
 
@@ -28,7 +29,7 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -41,13 +42,13 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <form name="type1">
-                            <a class="dropdown-item" onclick="GetType('1')" type="button">Манги</a>
-                            <a class="dropdown-item" onclick="GetType('2')" type="button">Манхвы</a>
-                            <a class="dropdown-item" onclick="GetType('3')" type="button">Сингла</a>
+                                <a class="dropdown-item" onclick="GetType('1')" type="button">Манги</a>
+                                <a class="dropdown-item" onclick="GetType('2')" type="button">Манхвы</a>
+                                <a class="dropdown-item" onclick="GetType('3')" type="button">Сингла</a>
                             </form>
                         </div>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Форум</a>
                     </li>
@@ -56,12 +57,13 @@
                     </li>
                 </ul>
                 <form name="publish" class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" id="searchText" name="message" type="search" placeholder="Поиск по названию" aria-label="Search">
+                    <input class="form-control mr-sm-2" id="searchText" name="message" type="search"
+                        placeholder="Поиск по названию" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
                 </form>
             </div>
-        </nav>    
-    
+        </nav>
+
     </div>
     <div class="main-page">
         <div class="double-pages">
@@ -70,15 +72,14 @@
                     <h5>Каталог Манги</h5>
                     <a class="addLink" href="AddPage.html">&#43;</a>
                 </div>
-                <div class="media-cards-section" id="media-card-section" >
+                <div class="media-cards-section" id="media-card-section">
                 </div>
             </div>
             <div class="filter-section">
                 <div class="filter">
                     <h5>Фильтр</h5>
                     <div class="divider"></div>
-                    <form action=""></form>
-                    <div class="filter-genre">
+                    <div class="filter-genre" id="filter-genre">
                         <!-- <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -94,7 +95,7 @@
                         </div> -->
                         <p></p>
                         <p>Жанр</p>
-                        <input type="checkbox" name="filter" id="Comedy" onclick="GetCheckbox">
+                        <!-- <input type="checkbox" name="filter" id="Comedy" onclick="GetCheckbox">
                         <label for="Comedy">Комедия</label><br>
                         <input type="checkbox" name="filter" id="Action" onclick="GetCheckbox">
                         <label for="Action">Экшен</label><br>
@@ -109,7 +110,7 @@
                         <input type="checkbox" name="filter" id="Sport" onclick="GetCheckbox">
                         <label for="Sport">Спорт</label><br>
                         <input type="checkbox" name="filter" id="Triller" onclick="GetCheckbox">
-                        <label for="Triller">Триллер</label><br>
+                        <label for="Triller">Триллер</label><br> -->
                     </div>
                     <div class="filter-type">
                         <p></p>

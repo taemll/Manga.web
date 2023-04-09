@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 
     <title>GinnojiManga </title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="MainPage.html">GinnojiManga</a>
@@ -59,25 +60,15 @@
                 <input class="form-control mr-sm-2" id="searchText" name="message" type="search" placeholder="Поиск по названию" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
             </form> -->
-    </div>
-    </nav>    
+        </div>
+    </nav>
     <div class="main-page">
         <div class="information-list">
             <div class="add-base">
                 <div class="input-section">
                     <label for="genre">Жанр</label><br>
-                    <!-- <input class="inputs" id="genre" type="text" size="40%" autocomplete="off"><br> -->
-                    <select id="genre" class="select-item">
-                        <option value="1">Комедия</option>
-                        <option value="2">Экшен</option>
-                        <option value="3">Фантастика</option>
-                        <option value="4">Приключения</option>
-                        <option value="5">Драма</option>
-                        <option value="6">Романтика</option>
-                        <option value="7">Спорт</option>
-                        <option value="8">Триллер</option>
-                    </select>
-                                        <p></p>
+                    <select id="genre" class="select-item"></select>
+                    <p></p>
                     <label for="title">Название манги</label><br>
                     <input class="inputs" id="title" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
@@ -96,7 +87,7 @@
                         <option value="2">Манхва</option>
                         <option value="3">Сингл</option>
                     </select>
-                                        <p></p>
+                    <p></p>
                     <label for="description">Описание</label><br>
                     <input class="inputs" id="description" type="text" size="40%" autocomplete="off"><br>
                     <p></p>
@@ -111,5 +102,7 @@
         </div>
     </div>
     <script src="js/create.js"></script>
+    <script src="js/genre.js"></script>
 </body>
+
 </html>
